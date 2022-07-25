@@ -30,7 +30,7 @@ pipeline {
        stage('Deploy Application with Tomcat Server' ) {
             steps {
                 echo 'Angular Test Project Deployement with Tomcat Server'
-				sh "cp -a /var/lib/jenkins/workspace/angular-pipeline/dist/jenkins-test/. /var/www/jenkins_test/html/"
+				sh "cp -a /var/lib/jenkins/workspace/angular-pipeline/dist/jenkins-test/. /var/www/angular-app/html/"
             }
         }
     }
