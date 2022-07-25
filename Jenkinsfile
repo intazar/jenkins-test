@@ -1,8 +1,5 @@
 pipeline {
     agent any
-
-    
-
     stages {
         stage('Source Code Checkout') {
             steps {
