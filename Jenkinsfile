@@ -14,12 +14,12 @@ pipeline {
                 sh "npm install"
             }
         }
-        stage('Testing Stage') {
-             steps {
-                echo 'Angular Test Project Code Unit Testing Stage'
-                sh "npm run test-headless"
-            }
-         }
+        //stage('Testing Stage') {
+             //steps {
+                // 'Angular Test Project Code Unit Testing Stage'
+               // sh "npm run test-headless"
+            //}
+        // }
        
         stage('Make Prod Build') {
             steps {
