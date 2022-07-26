@@ -21,12 +21,12 @@ pipeline {
             //}
         // }
        
-       // stage('Make Prod Build') {
-         //   steps {
-           //     echo 'Angular Test Project Prod Build'
-           //     sh "npm run build --prod"
-           // }
-       // }
+       stage('Make Prod Build') {
+            steps {
+               echo 'Angular Test Project Prod Build'
+               sh "npm run build --prod"
+            }
+       }
        //stage('Deploy Application with Tomcat Server' ) {
            // steps {
                // echo 'Angular Test Project Deployement with Tomcat Server'
