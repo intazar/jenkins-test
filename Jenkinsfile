@@ -8,12 +8,12 @@ pipeline {
                 
             }
         }
-        stage('Install Node Modules') {
-            steps {
-                echo 'Angular Test Project npm Install'
-                sh "npm install"
-            }
-        }
+        //stage('Install Node Modules') {
+            //steps {
+                //echo 'Angular Test Project npm Install'
+                //sh "npm install"
+            //}
+       // }
         //stage('Testing Stage') {
              //steps {
                 // 'Angular Test Project Code Unit Testing Stage'
@@ -21,17 +21,17 @@ pipeline {
             //}
         // }
        
-        stage('Make Prod Build') {
-            steps {
-                echo 'Angular Test Project Prod Build'
-                sh "npm run build --prod"
-            }
-        }
-       stage('Deploy Application with Tomcat Server' ) {
-            steps {
-                echo 'Angular Test Project Deployement with Tomcat Server'
-				sh "cp -a /var/lib/jenkins/workspace/angular-pipeline/dist/jenkins-test/. /var/www/angular-app/html/"
-            }
-        }
+       // stage('Make Prod Build') {
+         //   steps {
+           //     echo 'Angular Test Project Prod Build'
+           //     sh "npm run build --prod"
+           // }
+       // }
+       //stage('Deploy Application with Tomcat Server' ) {
+           // steps {
+               // echo 'Angular Test Project Deployement with Tomcat Server'
+				//sh "cp -a /var/lib/jenkins/workspace/angular-pipeline/dist/jenkins-test/. /var/www/angular-app/html/"
+           // }
+       // }
     }
 }
