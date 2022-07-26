@@ -24,7 +24,8 @@ pipeline {
        stage('Make Prod Build') {
             steps {
                echo 'Angular Test Project Prod Build'
-               sh "npm run build --prod"
+               sh 'npx ng build --prod --base-href=/jenkins-test/ && cd dist/jenkins-test && jar -cvf jenkins-test.war *'
+               //sh "npm run build --prod"
             }
        }
        //stage('Deploy Application with Tomcat Server' ) {
