@@ -8,6 +8,7 @@ pipeline {
                 
             }
         }
+        // This is comment
         //stage('Install Node Modules') {
             //steps {
                 //echo 'Angular Test Project npm Install'
