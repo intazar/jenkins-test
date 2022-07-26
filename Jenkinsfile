@@ -8,13 +8,12 @@ pipeline {
                 
             }
         }
-        // This is comment
-        //stage('Install Node Modules') {
-            //steps {
-                //echo 'Angular Test Project npm Install'
-                //sh "npm install"
-            //}
-       // }
+        stage('Install Node Modules') {
+            steps {
+                echo 'Angular Test Project npm Install'
+                sh "npm install"
+            }
+        }
         //stage('Testing Stage') {
              //steps {
                 // 'Angular Test Project Code Unit Testing Stage'
